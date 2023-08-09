@@ -5,7 +5,7 @@
     font-family: Helvetica Neue, Helvetica,  Arial;
 }
 main {
-    width: 960px;
+    width: 60vw;
     margin: auto;
 }
 
@@ -96,6 +96,7 @@ h1 {
     background-color: #7f8fa6;
     margin-top: 20px;
     color: #FFFFFF;
+    width: 100%;
 }
 
 #name-computer-player,
@@ -111,4 +112,32 @@ h1 {
 #points-computer-player,
 #points-human-player {
     font-size: 56px;
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        width: 100vw;
+    }
+
+    .human-player {
+        width: 60vw;
+    }
+
+    .computer-player {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #name-human-player, #name-computer-player {
+        display: none;
+    }
+
+    #points-human-player {
+        text-align: center;
+    }
+
+    #points-computer-player {
+        align-items: center;
+    }
 }
